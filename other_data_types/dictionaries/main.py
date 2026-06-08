@@ -1,31 +1,26 @@
-# Dictionary for a grocery store inventory
-inventory = {
-    "Apples": 30,
-    "Oranges": 18,
-    "Bananas": 45
-}
+# grocery_inventory to store information:
+grocery_inventory = {
+"Milk": (113, "Dairy"),
+"Eggs": (116, "Dairy"),
+"Bread": (117, "Bakery"),
+"Apples": (141, "Produce") }
 
-print("Original Inventory:", inventory)
-
-# get(): retrieves the value for a specified key, 
-# and if the key is not found, 
-# it returns None. This is different from using square brackets 
-# (e.g., grocery_items["Milk"]), which would raise an error if the key doesn't exist.
-# Get the count of Oranges
-print("Count of Oranges:", inventory.get("Oranges"))
-
-# Update inventory by adding a new item
-inventory.update({"Mangoes": 20})
-print("Updated Inventory:", inventory)
+#milk_details = grocery_inventory.get("Milk")
+#eggs_details = grocery_inventory.get("Eggs")
+bread_details = grocery_inventory.get("Bread")
+#apples_details = grocery_inventory.get("Apples")
 
 
-# You can also add a new item to the end of the dictionary like this
-inventory["Pineapples"] = 15
-print("Updated Inventory:", inventory)
+#print(f"Milk Details: {milk_details}")
+#print(f"Eggs Details: {eggs_details}")
+print(f"Details of Bread: {bread_details}")
+#print(f"Apples Details: {apples_details}")
 
+grocery_inventory.update({"Cookies": (143, "Bakery")})
+cookies_details = grocery_inventory.get("Cookies")
 
-# Remove Bananas from the inventory
-removed_item = inventory.pop("Bananas")
-print("Removed Item:", removed_item)
+print("Inventory after adding Cookies:", grocery_inventory)
 
-print("Current Inventory:", inventory)
+# Remove Eggs from the inventory
+removed_item = grocery_inventory.pop("Eggs")
+print("Inventory after removing Eggs:", grocery_inventory)
