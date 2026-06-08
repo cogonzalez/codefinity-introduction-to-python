@@ -1,6 +1,6 @@
 # Current inventory on shelf
-shelf = ("apples",  "bananas", "apples", "grapes", "bananas", "apples")
-#"oranges",
+shelf = ("apples", "oranges", "bananas", "apples", "grapes", "bananas", "apples")
+
 apple_count = shelf.count("apples")
 print(f"Number of Apples: {apple_count}")
 
