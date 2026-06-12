@@ -6,6 +6,6 @@ total = 0
 
 # item_price is an arbitrary variable prices is our list
 for item_price in prices:
-    total = total + item_price
+    total += item_price
 # final grand total
 print(f"Final Total: {total:0.2f}")
