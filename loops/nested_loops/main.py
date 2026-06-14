@@ -1,17 +1,12 @@
 produce = ["Tomatoes", "Lettuce"]
 dairy = ["Milk", "Cheese"]
 
-# List of lists representing stock in different departments
-department_stocks = [
-    ["Apples", "Bananas", "Cherries"],  # Fruits
-    ["Milk", "Cheese", "Butter"],       # Dairy
-    ["Bread", "Bagels", "Muffins"]      # Bakery
-]
+# categories are called sections: produce, dairy
+# items are each item in each section
+groceries = [ produce, dairy]
+#print(groceries)
 
-print("Inventory Check:")
-for department in department_stocks:
-    print(department) # For each iteration of the outer loop, the entire sublist is accessed
-    # The inner loop then iterates over the items in that sublist
-    for item in department:
-        print(f" - {item}")
-    print(" ")  # Add a line break for clarity
+for category in groceries:
+    for item in category:
+        print(f"Item name: {item}")
+
