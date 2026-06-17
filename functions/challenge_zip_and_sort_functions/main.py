@@ -11,5 +11,9 @@ quantities_sold = [50, 100, 25, 40]
 # [(products),(prices),(quantities_sold)]
 
 combined_list = list(zip(products, prices, quantities_sold))
+print(combined_list)
 sorted_products = sorted(combined_list)
 print(sorted_products)
+
+for name, price, qty in sorted_products:
+    print(f"Product: {name}, Price: {price}, Quantity Sold: {qty}")
