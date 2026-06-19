@@ -1,0 +1,14 @@
+# `cost` and `discount_rate` are the parameters of the function
+def calculate_discounted_price(cost, discount_rate):
+    final_price = cost * (1 - discount_rate)
+    return final_price
+
+# Call the `calculate_discounted_price` function and pass in `cost` and `discount_rate` values as arguments
+apples_final_price = calculate_discounted_price(1.2, 0.10)
+milk_final_price = calculate_discounted_price(2.2, 0.15)
+bread_final_price = calculate_discounted_price(0.8, 0.05)
+
+# Display the discounted prices
+print(f"The discounted price of apples is ${apples_final_price}")
+print(f"The discounted price of milk is ${milk_final_price}")
+print(f"The discounted price of bread is ${bread_final_price}")
