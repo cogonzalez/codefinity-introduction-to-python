@@ -1,0 +1,12 @@
+# Prices of items sold today
+prices = [12.99, 23.50, 4.99, 8.75, 15.00]
+
+# This function does not return a value but 
+# does print to terminal which is not the same thing
+
+def total_sales(prices):
+    print(f"Today's total sales: $", sum(prices))
+
+# Call the total_sales function, which does not return a value, but
+# does print tothe terminal a value.
+total_sales(prices)
