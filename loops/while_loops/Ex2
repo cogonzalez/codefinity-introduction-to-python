@@ -1,0 +1,18 @@
+# Initial amount of milk in stock
+milk_stock = 15
+# Minimum stock level before restocking is necessary
+min_stock = 50
+# Quantity a worker can restock at one time
+restock_quantity = 20
+
+# Start the loop to restock milk until the stock exceeds the minimum required level
+while milk_stock < min_stock:
+    # If the loop is running, the condition is `True`, indicating we need more milk
+    print(f"Milk stock is low: {milk_stock} units remaining.")
+    # Simulate the process of restocking milk
+    print("Restocking milk...")
+    # Increase the stock by the quantity the worker can bring in one trip
+    milk_stock += restock_quantity
+    
+# Output the final stock level after restocking is complete
+print(f"Milk stock updated: {milk_stock} units, which is now sufficient.")
