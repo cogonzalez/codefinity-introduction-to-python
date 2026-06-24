@@ -1,0 +1,14 @@
+# List of original prices of grocery items
+prices = [1.50, 2.00, 0.75, 3.25]
+
+# Discount factor (10% off each item)
+discount_factor = 0.10
+
+# Iterate over the list of prices using range(len()), which returns the length of parameter
+for cost in range(len(prices)):
+    # Apply the discount by reducing the price
+    prices[cost] -= prices[cost] * discount_factor
+    print(f"New price of item {cost + 1}: ${prices[cost]}")
+
+print("Updated prices:", prices)
+
