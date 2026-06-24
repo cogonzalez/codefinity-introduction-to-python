@@ -1,0 +1,14 @@
+def add_strawberry(original_list):
+    list_copy = original_list.copy()  # Create a copy of the original list
+    list_copy.append("Strawberry")  # Modify the copied list
+    return list_copy
+
+# Original list
+fruits = ["Apple", "Banana", "Cherry"]
+
+# Call the function
+new_fruits = add_strawberry(fruits)
+
+# Check the results
+print("Original list:", fruits)   # ['Apple', 'Banana', 'Cherry']
+print("Modified list:", new_fruits)  # ['Apple', 'Banana', 'Cherry', 'Strawberry']
