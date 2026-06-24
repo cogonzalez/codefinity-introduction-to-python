@@ -1,0 +1,12 @@
+# Define a function with a default `discount` argument
+def apply_discount(price, discount=0.10):
+    discounted_price = price * (1 - discount)
+    return discounted_price
+
+# Call the function without providing a `discount`, using the default value
+default_discount_price = apply_discount(100)
+print(f"Price after applying the default discount: ${default_discount_price}")
+
+# Call the function with a custom `discount` value
+custom_discount_price = apply_discount(100, 0.20)
+print(f"Price after applying a custom discount: ${custom_discount_price}")
