@@ -1,0 +1,5 @@
+product_stock = {"Milk": 120, "Eggs": 200}
+
+# Iterating over a dictionary
+for product, stock in product_stock.items():
+    print(f"{product} has {stock} units in stock.")
