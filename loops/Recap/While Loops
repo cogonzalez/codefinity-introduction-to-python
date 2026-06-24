@@ -1,0 +1,6 @@
+milk_stock = 50
+
+# Monitoring stock levels
+while milk_stock > 15:
+    print(f"Milk stock: {milk_stock}")
+    milk_stock -= 10  # Decrementing stock
