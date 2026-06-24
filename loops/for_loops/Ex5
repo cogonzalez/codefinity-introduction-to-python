@@ -1,0 +1,14 @@
+# Dictionary of products and their stock counts
+productStock = {"milk": 120, "eggs": 200, "bread": 80}
+
+# Print both the key and value for each dictionary item
+print("Inventory details:")
+
+for product, stock in productStock.items():
+    print(f"{product} has {stock} units in stock.")
+
+# If you need to access the keys and values simultaneously, the items() method 
+# allows you to loop through key-value pairs in a dictionary.
+# To use this method in a for loop, 
+# we specify two variables before the 'in' keyword 
+# — one for the key (product) and one for the value (stock):
