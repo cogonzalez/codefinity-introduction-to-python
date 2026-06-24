@@ -1,0 +1,31 @@
+# Define the function that adjusts inventory levels
+def update_inventory(inventory, items_sold):
+
+    # Iterate over each item in the dictionary
+    # notice in this for loop we don't use range(0,7,1) which generates a sequence {0,1,2,3,4,5,6,7}
+    # we use the items.sold.ites() method which pulls out both the key and the value:
+    # product and quantity_sold
+
+    for product, quantity_sold in items_sold.items():
+        # Decrease the inventory by the quantity sold for each product
+        inventory[product] -= quantity_sold
+
+# Inventory dictionary
+inventory = {
+    "apples": 50,
+    "bananas": 75,
+    "oranges": 100
+}
+
+# Items sold dictionary
+items_sold = {
+    "apples": 5,
+    "oranges": 15
+}
+
+# Update the inventory based on items sold
+# Calls function or Invokes the function
+update_inventory(inventory, items_sold)
+
+# Display the updated inventory
+print("Updated inventory:", inventory)
