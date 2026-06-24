@@ -1,0 +1,7 @@
+products = ["Bread", "Eggs", "Milk"]
+prices = [2.30, 2.50, 3.40]
+
+# Applying a discount and displaying the updated prices
+for i in range(len(prices)):
+    prices[i] =  prices[i] * 0.9  # Apply a 10% discount to each price
+    print(f"The price of {products[i]} is now {prices[i]}")
