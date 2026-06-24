@@ -1,0 +1,11 @@
+# Dictionary of products and their stock counts
+productStock = {"milk": 120, "eggs": 200, "bread": 80}
+
+# Print each dictionary value
+print("Stock counts:")
+
+for stock in productStock.values():
+    print(stock)
+# To iterate over the values of a dictionary, you can use the values() method.
+# This is useful for operations that require access to values without needing to reference the keys
+
