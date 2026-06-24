@@ -1,0 +1,19 @@
+#User-defined Functions
+...
+#def FUNCTION_NAME(PARAMETERS):
+#    BLOCK OF CODE
+#    return VALUE 
+
+#returned_value = FUNCTION_NAME(PARAMETERS)
+
+#Functions for Calculating Cost of Bundle
+
+def cost_of_bundle(price, quantity):
+    total = price*quantity
+    return total
+
+cost_of_apple = 0.85
+number_of_apples = 20
+
+total_bundle_cost = cost_of_bundle(cost_of_apple, number_of_apples)
+print(total_bundle_cost)
