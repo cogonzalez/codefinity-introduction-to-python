@@ -1,0 +1,4 @@
+groceryItems = ["milk", "eggs", "cheese", "butter"]
+for item in groceryItems:
+    # Code to be executed
+    print(item)
