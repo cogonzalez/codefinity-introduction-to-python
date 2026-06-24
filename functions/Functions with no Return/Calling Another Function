@@ -1,0 +1,26 @@
+# Dictionary representing the current stock of products
+inventory = {
+    "apples": 17,
+    "bananas": 75,
+    "oranges": 2,
+    "grapes": 50
+}
+
+# Function to restock items that have low stock levels by adding a specified amount
+def restock(product, inventory, restock_amount):
+    inventory[product] += restock_amount
+    print(f"Restock order placed for {product}. New stock level: {inventory[product]} units.")
+
+# Function to check which items are below the stock threshold and trigger the `restock` function
+def check_stock_levels(inventory, threshold):
+    for product, quantity in inventory.items():
+        if quantity < threshold:
+            # If the stock is below the threshold, call the `restock` function to add 50 units
+            # CALLS the restock function
+            restock(product, inventory, 50)
+
+# Checking the stock levels for all products in the inventory with a threshold of 30 units
+check_stock_levels(inventory, 30)
+
+# Display the final inventory after restocking
+print("Final inventory status:", inventory)
