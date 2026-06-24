@@ -1,0 +1,8 @@
+# Dictionary of products and their stock counts
+productStock = {"milk": 120, "eggs": 200, "bread": 80}
+
+# Print each dictionary key
+print("Product list:")
+for product in productStock:
+    print(product)
+# Notice how the iterator variable product only accesses the dictionary keys.
