@@ -1,0 +1,8 @@
+# Planning seasonal sale days in the last week of December
+for day in range(25, 32):
+    print(f"Seasonal sale on December {day}.") 
+
+
+# Two Arguments
+# When two arguments are provided, like 25 (start) and 32 (stop), 
+# range() generates a sequence from 25 to 31 (since the step value is excluded from the sequence).
