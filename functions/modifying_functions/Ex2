@@ -1,0 +1,11 @@
+# Function where `tax` has a default value
+def calculate_total(price, discount, tax=0.05):
+    total = price * (1 + tax) * (1 - discount)
+    return total
+
+# Calling the function using keyword arguments
+# you do not have to code: price=100, discount=0.15 
+# you can simply code: 100, 0.15
+
+total_cost = calculate_total(price=100, discount=0.15)
+print(f"Total cost after applying discount: ${total_cost}")
