@@ -1,0 +1,9 @@
+# Print each letter in the string
+vegetable = "Carrot"
+for letter in vegetable:
+    print(letter)
+
+# Tuple containing different categories of the grocery store
+categories = ("Produce", "Bakery", "Meat", "Dairy")
+for category in categories:
+    print(category)
