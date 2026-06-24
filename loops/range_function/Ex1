@@ -1,0 +1,6 @@
+# Announce store opening every day for 7 days
+for day in range(7):
+    print(f"Good morning! The store is now open on day {day}.")
+
+# When the range() function is given a single argument, 
+# it treats this as the stop parameter.
