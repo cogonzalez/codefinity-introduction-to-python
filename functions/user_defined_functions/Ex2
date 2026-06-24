@@ -1,0 +1,4 @@
+def greet_customer(name):
+    print(f"Hello, {name}! Welcome to our store.")
+
+greet_customer("Alice")
