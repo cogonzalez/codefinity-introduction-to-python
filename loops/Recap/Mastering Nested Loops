@@ -1,0 +1,9 @@
+aisles = [["Apples", "Bananas"], ["Milk", "Cheese"]]
+
+# Outer loop to manage aisles
+for aisle in aisles:
+    print(f"Aisle #{aisles.index(aisle) + 1}:")
+
+    # Nested loop to manage items in each aisle
+    for item in aisle:
+        print(item)
