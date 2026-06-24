@@ -1,0 +1,11 @@
+# Schedule staff shifts every three hours throughout a 12-hour day
+for hour in range(1, 13, 3):
+    print(f"Staff shift starts at hour {hour}.")
+
+# Three Arguments
+# By adding a third argument to range(), you introduce a step value, 
+# which defines the increment between each number in the sequence.
+#
+# In this example, range() takes 1 (start), 13 (stop), and 3 (step), 
+# producing the numbers 1, 4, 7, 10. These can represent the starting 
+# hours of staff shifts during a 12-hour workday.
