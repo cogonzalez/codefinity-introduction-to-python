@@ -1,0 +1,7 @@
+# Defining a function to calculate restocking needs
+def restock_quantity(current_stock, desired_stock):
+    restock_qty = desired_stock - current_stock
+    return max(restock_qty, 0)
+
+restock_needed = restock_quantity(10, 25)
+print(f"Restock needed: {restock_needed} units")
