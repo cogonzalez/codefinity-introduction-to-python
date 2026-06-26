@@ -1,0 +1,9 @@
+# Function to update inventory without returning a value
+def update_inventory(inventory, items_sold):
+    for product, quantity in items_sold.items():
+        inventory[product] -= quantity
+        print(f"Updated {product} stock: {inventory[product]} units")
+
+inventory = {"Milk": 50, "Bread": 30}
+items_sold = {"Milk": 5, "Bread": 10}
+update_inventory(inventory, items_sold)
