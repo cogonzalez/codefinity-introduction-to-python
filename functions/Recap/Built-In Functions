@@ -1,0 +1,4 @@
+# Using sum() to calculate the total cost
+prices = [2.99, 1.99, 3.49, 2.50]
+total_cost = sum(prices)
+print(f"Total cost: ${total_cost}")
