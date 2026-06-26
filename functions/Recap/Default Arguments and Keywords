@@ -1,0 +1,11 @@
+def calculate_final_cost(items, tax_rate=0.07):
+    subtotal = sum(items.values())
+    tax = subtotal * tax_rate
+    total = subtotal + tax
+    return total
+
+products = {"Milk": 2.99, "Bread": 1.79, "Eggs": 3.49}
+
+# Passing a dictionary as a single argument
+final_total = calculate_final_cost(products)
+print(f"Final total with tax: ${final_total}")
